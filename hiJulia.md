@@ -156,7 +156,7 @@ As we can see, Julia's DataFrame with the Query package are so powerful ... Now 
 plot(Movies4, x = :Year, y = :Count, Geom.line)
 ```
 
-![](hijulia_files/figure-markdown_github/line.png)
+![](hiJulia_files/figure-markdown_github/line.png)
 
 It really looks like **ggplot2** !!! Let's do some more visualizations ...
 
@@ -165,19 +165,19 @@ diamonds = dataset("ggplot2", "diamonds")
 plot(diamonds, x = :Price, y = :Carat, Geom.hexbin)
 ```
 
-![](hijulia_files/figure-markdown_github/hex.png)
+![](hiJulia_files/figure-markdown_github/hex.png)
 
 ``` julia
 plot(diamonds, x = :Price, color = :Cut, Geom.density)
 ```
 
-![](hijulia_files/figure-markdown_github/density.png)
+![](hiJulia_files/figure-markdown_github/density.png)
 
 ``` julia
 plot(diamonds, x = :Cut, y = :Price, Geom.boxplot)
 ```
 
-![](hijulia_files/figure-markdown_github/box.png)
+![](hiJulia_files/figure-markdown_github/box.png)
 
 And we can even do more with Gadfly ... Now as we have looked at data exploration, transformation and visualization, let's look at some important aspect of Data Science **Machine Learning** Julia has so many projects and packages to do Machine Learning and Deep Learning as well. Here we're going to talk about three of them ...
 
@@ -274,7 +274,7 @@ plot(Animals, x = :Brain, y = :Body,
      Geom.point, Geom.label, Scale.x_log10, Scale.y_log10)
 ```
 
-![](hijulia_files/figure-markdown_github/cluster.png)
+![](hiJulia_files/figure-markdown_github/cluster.png)
 
 This is straightforward ...
 
