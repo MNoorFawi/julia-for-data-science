@@ -1,4 +1,3 @@
-
 Pkg.add("DataFrames")
 Pkg.add("Query")
 # .....
@@ -100,7 +99,7 @@ for i = 1:10; train(w, [(x, y)]); println(loss(w, x, y)); end
 ## First let's look at every variable cofficient and the intercept
 
 w[1]
-# 1×9 Array{Float64,2}:
+# 1Ã—9 Array{Float64,2}:
 #  -0.0188016  -0.148975  0.810052  0.0934263  0.149106  0.100036  -0.0526069  0.430641  2.39719
 
 w[2]
@@ -129,10 +128,3 @@ model = kmeans(feature_matrix, 3) # 3 clusters
 plot(Animals, x = :Brain, y = :Body, 
      color = categorical(model.assignments), label = :Species, 
      Geom.point, Geom.label, Scale.x_log10, Scale.y_log10)
-
-
-
-
-
-
-
