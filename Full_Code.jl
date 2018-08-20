@@ -128,3 +128,4 @@ model = kmeans(feature_matrix, 3) # 3 clusters
 plot(Animals, x = :Brain, y = :Body, 
      color = categorical(model.assignments), label = :Species, 
      Geom.point, Geom.label, Scale.x_log10, Scale.y_log10)
+
