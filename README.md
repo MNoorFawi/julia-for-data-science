@@ -13,6 +13,7 @@ Julia for Data Science
 ###### Julia is FAST. Julia was designed from the beginning for high performance and GPU acceleration. It's General, Dyamic and fast-growing, its community is expanding magnificently.
 
 ##### One beautiful thing about Julia is that its syntax resembles that of R. and as an R lover, I have begun to love Julia ...
+###### N.B. we'll be using Julia version 0.6.4
 
 Here we're going to explore some of what can be done in Data Science with Julia.
 
