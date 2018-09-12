@@ -200,7 +200,7 @@ x = convert(Array, x)'
 # Scale x
 x = x ./ sum(x, 1)
 y = House[:x3]'
-y = [log10(i) for i in y] # log y 
+y = log10.(y) # log y 
 ## TRAIN THE MODEL
 using Knet
 predict(w, x) = w[1]*x .+ w[2] # linear regression equation ax + b
@@ -264,9 +264,8 @@ No let's look at **CLUSTERING** and how it can be done with Julia.
 Animals = dataset("MASS", "Animals")
 using Clustering
 
-feature_matrix = permutedims(convert(Array, Animals[:, 2:3]), 
+feature_matrix = permutedims(convert(Array{Float32}, Animals[:, 2:3]), 
                              [2, 1]) # to convert it to matrix
-feature_matrix = collect(Missings.replace(feature_matrix, 0.0)) # to replace missings
 model = kmeans(feature_matrix, 3) # 3 clusters           
 
 ## Plotting clusters
